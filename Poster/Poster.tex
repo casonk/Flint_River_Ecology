@@ -126,7 +126,10 @@
 
 %%% Diversity %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \headerbox{Diversity}{name=box10, column=1, row=0}{
-  \includegraphics[width=.9\textwidth]{Img/Diversity_Bubble_Plot.png} \\
+  \begin{center}
+    \includegraphics[width=.8\textwidth]{Img/Diversity_Bubble_Plot.png} \\
+  \end{center}
+  
 
   In this figure we compare catch rates between sites $1/3$ below the dam, and sites $2/4$ above the dam. 
   Notable differences show much higher catch rates of gizzard shad below the dam and rock bass above the dam.
@@ -137,18 +140,22 @@
 
   \hspace{5mm}
   Using Simpson's Diversity Index we compared species diversity above and below the dam. 
-  We computed relative index values of $0.77$ at site $1$, $0.77$ at site $2$, $0.48$ at site $3$, and $0.72$ at site $4$. \\
-  \begin{center}
-    Simpson's Diversity Index 
-    $ \displaystyle D = 1 - \frac {\sum n(n-1)} {N(N-1)} $ \\
-  \end{center}
+  We computed relative index values for the four sites $(S)$,  $D_{S_{3}} = 0.48 \le D_{S_{4}} = 0.72 \le D_{S_{1}} = 0.77 = D_{S_{2}} = 0.77$. \\
+
   Values close to $1$ indicate perfect species diversity while values close to $0$ indicate single species domination. \\
+
+  In a similar manner we aggregated sites below the dam, $ B = S_{3} \cup S_{1} = 0.77 $, and above the dam, $ A = S_{4} \cup S_{2} = 0.77 $. 
+  We then recalculated diversity on this union to find $ D_{B} = 0.67 \le D_{A} =  0.75 $.
 }
 
-%%% Descriptions %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\headerbox{}{name=box30, column=3, row=0}{
+%%% The Mitten %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\headerbox{Where is Flint?}{name=box30, column=3, row=0}{
 
   \hspace{5mm}
+
+  \begin{center}
+    \includegraphics[width=1.0\textwidth]{Img/mit.png} \\
+  \end{center}
 
 }
 
