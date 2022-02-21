@@ -14,7 +14,7 @@
 \usepackage{hyperref}
 
 \definecolor{umblue}{rgb}{0.03, 0.15, 0.30}
-\definecolor{ummaize}{rgb}{0.90, 0.85 0.40}
+\definecolor{ummaize}{rgb}{0.90, 0.85, 0.40}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Utility functions %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -130,13 +130,24 @@
     \includegraphics[width=.8\textwidth]{Img/Diversity_Bubble_Plot.png} \\
   \end{center}
   
-
   In this figure we compare catch rates between sites $1/3$ below the dam, and sites $2/4$ above the dam. 
   Notable differences show much higher catch rates of gizzard shad below the dam and rock bass above the dam.
+
+}
+
+%%% Hg Compare %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\headerbox{Toxins}{name=box20, column=2, row=0}{
+  \begin{center}
+    \includegraphics[width=.99\textwidth]{Img/Hg.png} \\
+  \end{center}
+  
+  In this figure we compare Hg levels from tested fish caught between sites $1/3$ below the dam, and sites $2/4$ above the dam. 
+  The values represent the difference between downstream and upstream species tested. \\ $(downstream - upstream)$.
+
 }
 
 %%% Analysis %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\headerbox{Analysis}{name=box20, column=2, row=0}{
+\headerbox{Analysis}{name=box21, column=2, row=1, below=box20}{
 
   \hspace{5mm}
   Using Simpson's Diversity Index we compared species diversity above and below the dam. 
@@ -146,6 +157,9 @@
 
   In a similar manner we aggregated sites below the dam, $ B = S_{3} \cup S_{1} = 0.77 $, and above the dam, $ A = S_{4} \cup S_{2} = 0.77 $. 
   We then recalculated diversity on this union to find $ D_{B} = 0.67 \le D_{A} =  0.75 $.
+
+  What is going on here? If we look back at the Visual Diversity figure, we can see the Downstream has a richer species landscape than upstream, 
+  although as downstream has a dominated catch rate of small Gizzard shad, we realize a lower diversity. 
 }
 
 %%% The Mitten %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -154,7 +168,7 @@
   \hspace{5mm}
 
   \begin{center}
-    \includegraphics[width=1.0\textwidth]{Img/mit.png} \\
+    \includegraphics[width=1.0\textwidth]{Img/mitt.jpg} \\
   \end{center}
 
 }
