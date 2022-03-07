@@ -1141,6 +1141,7 @@
 
 %%% COLOR DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \definecolor{uniblue}{RGB}{0,66,137}
+\definecolor{umblue}{HTML}{00274C}
 
 %%% PGFPLOTS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{pgfplots}
@@ -1157,7 +1158,7 @@
 }}
 
 %%% ITEMIZE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\renewcommand{\labelitemi}{\color{uniblue}\scriptsize$\blacksquare$}
+\renewcommand{\labelitemi}{\color{umblue}\scriptsize$\circledast$}
 
 %%% Save space in lists. Use this after the opening of the list %%%%%%%%%%%%%%%%
 \let\tempone\itemize

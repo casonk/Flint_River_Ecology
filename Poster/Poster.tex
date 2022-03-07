@@ -8,11 +8,15 @@
 \usepackage{amsmath,amssymb}   % math
 \usepackage{natbib}
 \usepackage{graphicx}          % pix
+\usepackage{pgf}               % spakt
+\usepackage{tikz}              % draw
 \usepackage{xcolor}            % colurs
 \usepackage{hyperref}          % linx
 
-\definecolor{umblue}{rgb}{0.03, 0.15, 0.30}
-\definecolor{ummaize}{rgb}{0.90, 0.85, 0.40}
+% \definecolor{umblue}{rgb}{0.03, 0.15, 0.30}
+\definecolor{umblue}{HTML}{00274C}
+% \definecolor{ummaize}{rgb}{0.90, 0.85, 0.40}
+\definecolor{ummaize}{HTML}{FFCB05}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Utility functions %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -89,8 +93,8 @@
   \text{Cason Konzer} : \textit{\color{violet}{casonk@umich.edu}}, 
   \text{Heather Dawson} : \textit{\color{violet}{hdawson@umich.edu}} 
   
-  \hspace{1mm} $\downharpoonright$ website : \textit{\color{violet}{https://flintriverecostudy.com}}
-  \hspace{1mm} $\downharpoonright$ repository : \textit{\color{violet}{https://github.com/casonk/Flint\_River\_Ecology}}
+  \hspace{1mm} {\color{umblue}$\downharpoonright$} website : \textit{\color{violet}{https://flintriverecostudy.com}}
+  \hspace{1mm} {\color{umblue}$\downharpoonright$} repository : \textit{\color{violet}{https://github.com/casonk/Flint\_River\_Ecology}}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Logo %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -160,7 +164,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \headerbox{Diversity}{name=box10, column=1, row=0}{
   \begin{center}
-    \includegraphics[width=.8\textwidth]{Img/Diversity_Bubble_Plot.png} \\
+    \includegraphics[width=\textwidth]{Img/Diversity_Bubble_Plot.png} \\
   \end{center}
   
   In this figure we compare catch rates between sites $1/3$ below the dam, and sites $2/4$ above the dam. 
@@ -172,15 +176,15 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \headerbox{Toxins}{name=box20, column=2, row=0}{
   \begin{center}
-    \includegraphics[width=.85\textwidth]{Img/Hg.png} \\
+    \includegraphics[width=\textwidth]{Img/Hg.png} \\
   \end{center}
   
   In this figure we compare Hg levels from tested fish caught between sites $1/3$ below the dam, and sites $2/4$ above the dam. 
-  The values represent the difference between downstream and upstream species tested. \\ $(downstream - upstream)$.
+  The values represent the difference between downstream and upstream species tested. e.g $(downstream - upstream)$ mg/kg.
 
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% Discussion %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Discussion %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \headerbox{Discussion}{name=box21, column=2, row=1, below=box20}{
 
@@ -201,6 +205,64 @@
     This could be due to downstream containing species that are migrating from The Great Lakes.
   \end{itemize}
 }
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%% Discussion %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \headerbox{Discussion}{name=box30, column=3, row=0}{
+
+%   \begin{itemize} \normalsize 
+%     \item Using Simpson's Diversity Index we compared species diversity above and below the dam. 
+%     We computed relative index values for the four sites $(S)$,  $D_{S_{3}} = 0.48 \le D_{S_{4}} = 0.72 \le D_{S_{1}} = 0.77 = D_{S_{2}} = 0.77$. \\
+%     \item Downstream yielded an index of 0.67 with 31 species caught. 
+%     The overall catch was dominated by Gizzard shad making it less even than upstream.
+%     \item Upstream yielded an index of 0.75 with 20 species caught. 
+%     Though there was less species diversity, it yielded a higher index because there was more eveness among the species caught.   
+%     \item The dam prevents species from traveling upstream, we caught more species below the dam. 
+%     Fishing methods upstream differed from downstream due to the different habitats. 
+%     This could impact the fish species caught and the quantities.
+%     \item Mercury levels were analyzed in fish above and below the dam.
+%     Bass contained higher levels of mercury compared to other species. 
+%     Fish higher in the trophic level bioaccumulate more than other species. 
+%     Downstream had more species with higher levels of mercury. 
+%     This could be due to downstream containing species that are migrating from The Great Lakes.
+%   \end{itemize}
+% }
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%% Conclusion %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \headerbox{Conclusion}{name=box31, column=3, row=1, below=box30}{
+
+%   \textbf{
+%   The ecology study of the Flint River has been conducted for 2 years. 
+%   Study will be continued through the removal of the Hamilton Dam and restoration of the Flint River. 
+%   This pre-assessment will be used to compare data once restoration is 
+%   complete to understand how dam removal impacts riverine ecosystems.}
+% }
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%% The Mitten %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \headerbox{Where is Flint?}{name=box32, column=3, row=2, below=box31}{
+
+%   \begin{center}
+%     \includegraphics[width=0.55\textwidth]{Img/mit.png} \\
+%   \end{center}
+
+% }
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%% Acknowledgements %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \headerbox{Acknowledgements}{name=box33, column=3, row=3, below=box32, above=bottom}{
+
+%   For funding we thank the Community Foundation of Greater Flint, 
+%   Saginaw Bay Watershed Initiative Network, 
+%   UM-Flint Office of Research, 
+%   UM-Flint CAS Opportunity Fund, 
+%   UM-Flint Urban Institute for Racial, Economic, \& Enviornmental Justice,
+%   and the Gary and Colleen Pace Field Biology Scholarship. 
+%   We thank those who have worked on or helped with the project including many UM-Flint students, 
+%   Megan Heyza, and the Flint River Watershed Coalition
+
+% }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Conclusion %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -217,19 +279,30 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \headerbox{Where is Flint?}{name=box31, column=3, row=1, below=box30}{
 
-  \begin{center}
-    \includegraphics[width=0.55\textwidth]{Img/mit.png} \\
-  \end{center}
+  \begin{minipage}{0.5\textwidth}
+    Flint is an hour and 45 minutes East of Grand Rapids. 
+    Flint is the home to 81,252 unique residents, compared to Grand Rapids population size of 198,917.
 
+  \end{minipage}
+  \begin{minipage}{0.5\textwidth}
+    \begin{center}
+      \includegraphics[width=0.66\textwidth]{Img/mit.png}
+    \end{center}
+  \end{minipage}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Acknowledgements %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \headerbox{Acknowledgements}{name=box32, column=3, row=2, below=box31}{
 
-  We wold like to thank X ! Y ! Z !
-
-  We would like to acknowledge our amazing mentor Dr. Heather Dawson
+  For funding we thank the Community Foundation of Greater Flint, 
+  Saginaw Bay Watershed Initiative Network, 
+  UM-Flint Office of Research, 
+  UM-Flint CAS Opportunity Fund, 
+  UM-Flint Urban Institute for Racial, Economic, \& Enviornmental Justice,
+  and the Gary and Colleen Pace Field Biology Scholarship. 
+  We thank those who have worked on or helped with the project including many UM-Flint students, 
+  Megan Heyza, and the Flint River Watershed Coalition
 
 }
 \end{poster}
