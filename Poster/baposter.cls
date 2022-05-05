@@ -209,6 +209,7 @@
 \DeclareOptionX{archE1}        {                           \baposter@setfinalpapersize{30in}{42in}}%
 \DeclareOptionX{archE2}        {                           \baposter@setfinalpapersize{26in}{38in}}%
 \DeclareOptionX{archE3}        {                           \baposter@setfinalpapersize{27in}{39in}}%
+\DeclareOptionX{kappa}         {                           \baposter@setfinalpapersize{45in}{45in}}%
 \DeclareOptionX{a0paper}       {\@geometryKnowsThisSizetrue\baposter@setfinalpapersize{841mm}{1189mm}}%g
 \DeclareOptionX{a1paper}       {\@geometryKnowsThisSizetrue\baposter@setfinalpapersize{594mm}{841mm}}%g
 \DeclareOptionX{a2paper}       {\@geometryKnowsThisSizetrue\baposter@setfinalpapersize{420mm}{594mm}}%g
@@ -234,9 +235,9 @@
 \DeclareOptionX{screen}        {\@geometryKnowsThisSizetrue\baposter@setfinalpapersize{225mm}{180mm}}%g
 
 % Margin
-\setlength{\baposter@finalmargin}{1.5cm}
+\setlength{\baposter@finalmargin}{1cm}
 \DeclareOptionX{fontscale}[0.292]{\renewcommand{\baposter@fontscale}{#1}}
-\DeclareOptionX{margin}   [1.5cm]{\setlength{\baposter@finalmargin}{#1}}
+\DeclareOptionX{margin}   [1cm]{\setlength{\baposter@finalmargin}{#1}}
 
 % move text/poster body to the right (or to the left if negative)
 \newlength{\baposter@movebody}
@@ -347,13 +348,13 @@
 %% choose-keys also store the index in \baposter@optionnr
 %% choose-keys typically also assign a function
 \definecolor{baposter@silver}{cmyk}{0,0,0,0.7}
-\define@boolkey[ba]{poster}[baposter@]{grid}                 [false]       {}
-\define@boolkey[ba]{poster}[baposter@]{eyecatcher}           [true]        {}
-\define@cmdkey [ba]{poster}[baposter@]{headerheight}         [0.1\textheight]{}
-\define@cmdkey [ba]{poster}[baposter@]{columns}              [{}]          {}
-\define@cmdkey [ba]{poster}[baposter@]{colspacing}           [1em]         {}
+\define@boolkey[ba]{poster}[baposter@]{grid}                 [false]          {}
+\define@boolkey[ba]{poster}[baposter@]{eyecatcher}           [true]           {}
+\define@cmdkey [ba]{poster}[baposter@]{headerheight}         [0.1\textheight] {}
+\define@cmdkey [ba]{poster}[baposter@]{columns}              [{}]             {}
+\define@cmdkey [ba]{poster}[baposter@]{colspacing}           [1em]            {}
 \define@cmdkey [ba]{poster}[baposter@]{bgColorOne}           [baposter@silver]{}
-\define@cmdkey [ba]{poster}[baposter@]{bgColorTwo}           [green]       {}
+\define@cmdkey [ba]{poster}[baposter@]{bgColorTwo}           [green]          {}
 
 % background can be one of: shadeLR, shadeTB, plain, user, none
 \define@choicekey*+[ba]{poster}{background}%
@@ -1163,5 +1164,6 @@
 %%% Save space in lists. Use this after the opening of the list %%%%%%%%%%%%%%%%
 \let\tempone\itemize
 \let\temptwo\enditemize
+
 %\renewenvironment{itemize}{\tempone\addtolength{\itemsep}{0.5\baselineskip}}{\temptwo}
 \renewenvironment{itemize}{\tempone\setlength\itemsep{0pt}}{\temptwo}
